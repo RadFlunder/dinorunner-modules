@@ -43,3 +43,8 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+
+### Run direcotires
+/dinorunner-api/run/
+/dinorunner/run/
+/dinorunner-server/run/
