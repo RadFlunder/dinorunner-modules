@@ -5,6 +5,7 @@ import net.fabricmc.api.ClientModInitializer
 import net.fabricmc.api.DedicatedServerModInitializer
 import net.fabricmc.api.ModInitializer
 import net.minecraft.util.Identifier
+import net.silkmc.silk.core.logging.logger
 
 class DinoRunner : ModInitializer, ClientModInitializer, DedicatedServerModInitializer {
 
@@ -13,6 +14,7 @@ class DinoRunner : ModInitializer, ClientModInitializer, DedicatedServerModIniti
     }
 
     override fun onInitializeClient() {
+        logger().info("INITIALIZED CLIENT")
         TestPacketCommand.init()
 
     }
