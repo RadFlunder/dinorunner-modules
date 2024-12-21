@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "dinorunner-server",
+  "version": "${version}",
+
+  "name": "dinorunner-server",
+  "description": "",
+  "authors": [],
+  "contact": {},
+
+  "license": "All-Rights-Reserved",
+  "icon": "assets/dinorunner-server/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "gg.radflunder.dinorunner.server.DinoRunnerServer"
+      }
+    ]
+  },
+
+  "mixins": [
+    "dinorunner-server.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-language-kotlin": ">=${kotlin_loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
